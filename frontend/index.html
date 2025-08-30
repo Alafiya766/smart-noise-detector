@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Noise Detector — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Noise Detector</h1>
+    <div class="cards">
+      <div class="card" id="summary">
+        <h3>Summary</h3>
+        <p id="summary-text">Loading...</p>
+      </div>
+      <div class="card" id="add">
+        <h3>Add Reading</h3>
+        <form id="add-form">
+          <label>dB: <input name="db_level" type="number" step="0.1" required></label>
+          <label>Location: <input name="location"></label>
+          <label>Type: <input name="noise_type"></label>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <h2>Recent readings</h2>
+    <canvas id="chart" height="120"></canvas>
+    <table id="readings-table">
+      <thead><tr><th>Time</th><th>dB</th><th>Location</th><th>Type</th><th>Device</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

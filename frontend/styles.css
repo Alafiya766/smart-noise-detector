@@ -1,0 +1,11 @@
+:root{font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+body{background:#f5f7fb;margin:0;color:#111}
+.container{max-width:980px;margin:24px auto;padding:18px}
+.cards{display:flex;gap:16px;margin-bottom:16px}
+.card{background:white;padding:12px;border-radius:8px;box-shadow:0 4px 14px rgba(20,20,40,0.05);flex:1}
+#chart{background:white;padding:12px;border-radius:8px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;background:white;border-radius:8px;overflow:hidden}
+thead th{background:#f0f4f8;padding:8px;text-align:left}
+tbody td{padding:8px;border-top:1px solid #eee}
+form label{display:block;margin-bottom:6px}
+button{padding:8px 12px;border-radius:6px;border:none;background:#0066ff;color:white}
